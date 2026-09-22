@@ -1,0 +1,30 @@
+# Secrets — payment/server keys must never be committed.
+# See "Connecting payment" in README.md: keys belong on the server, not here.
+.env
+.env.*
+*.key
+*.pem
+secrets.json
+
+# Dependencies (only if a build step is ever added)
+node_modules/
+package-lock.json.bak
+
+# Build output
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs
+*.log
+npm-debug.log*
